@@ -83,14 +83,12 @@ pub fn Hero() -> Element {
 #[component]
 pub fn DetailCard(title_text: String, hook: String) -> Element {
     rsx! {
-        div { class: "max-w-lg p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700",
+        div { class: "max-w-lg p-6 rounded-lg shadow bg-gray-800 border-gray-700",
             AwardIconSVG {}
             a { href: "#",
-                h5 { class: "mb-2 text-5xl font-semibold text-gray-900 dark:text-white",
-                    "{title_text}"
-                }
+                h5 { class: "mb-2 text-5xl font-semibold text-white", "{title_text}" }
             }
-            p { class: "mb-3 text-3xl text-gray-500 dark:text-gray-400", "{hook}" }
+            p { class: "mb-3 text-3xl text-gray-500", "{hook}" }
         }
     }
 }
