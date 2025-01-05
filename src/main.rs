@@ -70,7 +70,7 @@ pub fn Hero() -> Element {
             }
             div { class: "video-content space-y-2",
                 h1 { class: "font-light text-7xl sm:text-9xl", "TDS: Delta" }
-                h3 { class: "font-light text-5xl", "The ultimate 2d arena shooter" }
+                h3 { class: "font-light text-5xl", "The Ultimate 2D Arena Shooter" }
                 h3 { class: "font-light text-3xl", "Coming spring 2025" }
                 SocialLinksContainer {}
             }
