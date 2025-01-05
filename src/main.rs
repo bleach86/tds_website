@@ -18,14 +18,6 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-        document::Meta {
-            name: "description",
-            content: "TDS: Delta - The Ultimate 2D Arena Shooter",
-        }
-        document::Meta {
-            name: "keywords",
-            content: "tds, arena, shooter, 2d, game, top-down-shooter, top down shooter",
-        }
         document::Link { rel: "icon", href: FAVICON }
         document::Link {
             rel: "apple-touch-icon",
