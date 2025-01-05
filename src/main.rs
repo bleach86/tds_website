@@ -39,6 +39,15 @@ fn App() -> Element {
         document::Link { rel: "manifest", href: "/assets/site.webmanifest" }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         document::Link { rel: "stylesheet", href: TAILWIND_CSS }
+        document::Meta {
+            name: "description",
+            content: "TDS: Delta - The Ultimate 2D Arena Shooter",
+        }
+        document::Meta { name: "author", content: "tuxprint" }
+        document::Meta {
+            name: "keywords",
+            content: "tds, arena, shooter, 2d, game, top-down-shooter, top down shooter",
+        }
         Hero {}
         DetailSection {}
         Footer {}
