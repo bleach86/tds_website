@@ -4,6 +4,7 @@ const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 const TAILWIND_CSS: Asset = asset!("/assets/tailwind.css");
 const HERO_VIDEO_AV1: Asset = asset!("/assets/tds_promo.webm");
+const HERO_VIDEO_VP9: Asset = asset!("/assets/tds_promo_vp9.webm");
 const HERO_VIDEO_H265: Asset = asset!("/assets/tds_promo_h265.mp4");
 const HERO_VIDEO_H264: Asset = asset!("/assets/tds_promo_h264.mp4");
 const HERO_POSTER: Asset = asset!("/assets/tds_promo_screen.png");
@@ -58,6 +59,7 @@ pub fn Hero() -> Element {
                     preload: "auto",
                     poster: HERO_POSTER,
                     source { r#type: "video/webm; codecs=av1", src: HERO_VIDEO_AV1 }
+                    source { r#type: "video/webm; codecs=vp9", src: HERO_VIDEO_VP9 }
                     source {
                         r#type: "video/mp4; codecs=hvc1.1.6.L93.B0",
                         src: HERO_VIDEO_H265,
