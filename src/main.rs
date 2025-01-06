@@ -127,19 +127,23 @@ pub fn DetailSection() -> Element {
 
 #[component]
 pub fn SocialLink(href: String, icon: String) -> Element {
-    let icon_element = match icon.as_str() {
-        "discord" => DiscordSVG,
-        "matrix" => MatrixSVG,
-        _ => DiscordSVG,
-    };
-
     rsx! {
         a {
             href,
             class: "text-white hover:text-gray-200",
             target: "_blank",
             rel: "noopener noreferrer",
-            icon_element {}
+            match icon.as_str() {
+                "discord" => rsx! {
+                    DiscordSVG {}
+                },
+                "matrix" => rsx! {
+                    MatrixSVG {}
+                },
+                _ => rsx! {
+                    DiscordSVG {}
+                },
+            }
         }
     }
 }
